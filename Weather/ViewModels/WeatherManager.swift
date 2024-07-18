@@ -9,7 +9,7 @@ import Foundation
 class WeatherManager: ObservableObject {
     @Published var weather: WeatherResponse?
     @Published var forecast: [ForecastResponse.Forecast] = []
-    private let apiKey = "b3f8f0f2fd4125196fe8c7f9997059f8" // Replace with your actual API key
+    private let apiKey = "" // Replace with your actual API key
     
     func fetchWeather(for city: String) {
         let weatherURL = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=\(apiKey)&units=metric"
